@@ -12,42 +12,60 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <style>
+        @media screen and (max-width:992px) {
+            body{
+                background-image: url("images/bgr-mobile.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: black;
+            }
+        }
+
+        
+
+        @media screen and (min-width:992px) {
+            body {
+                background-image: url("images/bgr.jpg");
+            }
+
+            #menu {
+                margin-left: 60%;
+            }
+            h2{
+                margin-right: 50%;
+            }
+        }
+
       
-@media screen and (min-width:992px){
-    #menu{
-        margin-left: 60%;
-    } 
-}
-body{
-background-image: url(../ui-portfolio/public/images/bgr.jpg);
-background-repeat: no-repeat;
-}
-.btn{
-    margin-left:100px;
-    color: blueviolet;
-    border: 1px;
-    border-radius:15px;
-    background-color: aquamarine;
-    padding:10px;
-    width:150px;
-    margin-top:50px;
-}
-#menu{
-    position: fixed;
-    top: 0px;  
-}
+
+        .btn {
+            margin-left: 100px;
+            color: blueviolet;
+            border: 1px;
+            border-radius: 15px;
+            background-color: aquamarine;
+            padding: 10px;
+            width: 150px;
+            margin-top: 50px;
+        }
+        #menu{
+            margin-left: 0%;
+        }
+
+        
     </style>
 </head>
+
 <body class="container-fluid">
     <div class="navbar navbar-expand-lg navbar-dark">
         <button style="position: sticky;" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
-        <span class="navbar-toggler-icon "></span>
+            <span class="navbar-toggler-icon "></span>
 
         </button>
         <h2 class="text-warning">Portfolio</h2>
         <div class="navbar-collapse collapse " id="menu">
-            <ul class="navbar-nav " style="font-weight: bolder;" >
-                <li class="nav-item"><a href="#data-1"class="nav-link text-success">Home </a></li>
+            <ul class="navbar-nav " style="font-weight: bolder;">
+                <li class="nav-item"><a href="#data-1" class="nav-link text-success">Home </a></li>
                 <li class="nav-item"><a class="nav-link  text-success">About</a></li>
                 <li class="nav-item"><a class="nav-link text-success">Skills</a></li>
                 <li class="nav-item"><a class="nav-link text-success">Portfolio</a></li>
@@ -59,17 +77,19 @@ background-repeat: no-repeat;
         <div class="fs-3 text-light">Hello,it's Me</div>
         <div class="fs-2 text-success">Naresh Sharma</div>
         <div class="fs-3 mt-3 text-light">And I'M a <span class="text-danger">Ui-Fullstack</span></div>
-        <div class="mt-3 text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Consequatur repudiandae amet vero voluptates voluptas labore!</div>
+        <div class="mt-3 text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Consequatur
+            repudiandae amet vero voluptates voluptas labore!</div>
     </div>
     <div class="mt-5 ms-5">
         <span><a class="bi bi-github p-3 fs-2"></a></span>
         <span><a class="bi bi-twitter p-3 fs-2"></a></span>
         <span><a class="bi bi-journal-bookmark p-3 fs-2"></a></span>
-        <span><a class="bi bi-linkedin p-3 fs-2" ></a></span>
-        <span><a href="https://nareshit.com" class="bi bi-instagram p-3 fs-2" ></a></span>
+        <span><a class="bi bi-linkedin p-3 fs-2"></a></span>
+        <span><a href="https://nareshit.com" class="bi bi-instagram p-3 fs-2"></a></span>
     </div>
-    <button class="btn" >
+    <button class="btn">
         Resume
     </button>
 </body>
+
 </html>
